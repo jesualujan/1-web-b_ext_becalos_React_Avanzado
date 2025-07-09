@@ -19,7 +19,8 @@ const AppRoutes = ({user, setUser}) => {
         <Route path="/" element={
         user 
         ? <h1 className="text-center text-3xl"> Bienvenido a mi App {user.email}</h1>
-        : <Navigate to="/login" />
+        : <Navigate to="/login"
+         />
          }
          />
           {/* Ruta comodín (404): se muestra si no coincide ninguna ruta anterior */}
