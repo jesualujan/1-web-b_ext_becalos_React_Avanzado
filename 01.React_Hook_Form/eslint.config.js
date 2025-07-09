@@ -24,6 +24,7 @@ export default defineConfig([
     },
     rules: {
       'no-unused-vars': ['error', { varsIgnorePattern: '^[A-Z_]' }],
+      'react/react-in-jsx-scope': 'off', // React 17 ya no necesita el import de React en los componentes
     },
   },
 ])
