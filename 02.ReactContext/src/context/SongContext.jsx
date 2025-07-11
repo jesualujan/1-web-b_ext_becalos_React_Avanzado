@@ -12,6 +12,7 @@ function SongProvider ({children}) {
     const [list, setList] = useState([]); // estado que va a contener la lista de canciones
     const [loading, setLoading] = useState(true) // estado ¿Está cargando la lista de canciones?
     const [selectedSong, setSelectedSong] = useState({}); // estado que va a contener la canción seleccionada
+    const [search, setSearch] = useState('') // identifica la palabara que pongo en el buscador
 
     // simular llamada a la API (mock delay de 2s)
     useEffect(() =>{
@@ -27,7 +28,9 @@ function SongProvider ({children}) {
         list,
         loading,
         selectedSong,
-        setSelectedSong
+        setSelectedSong,
+        search,
+        setSearch
     }
 
     //el proveedor (provider) es un componente que envuelve a otros componentes
