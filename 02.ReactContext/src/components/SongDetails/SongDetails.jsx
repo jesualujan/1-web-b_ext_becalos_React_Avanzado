@@ -1,10 +1,22 @@
-
+import {useSongContext} from '@/hook/useSongContext'
 
 const SongDetails = () => {
+    const {selectedSong} = useSongContext()
     return (
-        <div>
-                 Aquí va SongDetails
-        </div>
+      <>
+      {
+        selectedSong.title
+          ? (
+            <div>
+              <img src={selectedSong.img_url} alt={selectedSong.title} />
+              <h4>{selectedSong.title}</h4>
+              <h5>{selectedSong.artist}</h5>
+              <h6>{selectedSong.year}</h6>
+            </div>
+            )
+          : <h1> selecciona una canción...</h1>
+      }
+    </>
     )
 }
 
