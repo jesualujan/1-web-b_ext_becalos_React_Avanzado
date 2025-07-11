@@ -1,10 +1,12 @@
 import SongList from '../components/SongList/SongList'
 import SongDetails from '../components/SongDetails/SongDetails'
+import Header from '@/components/Header/Header'
 import { SongProvider } from '@/context/SongContext'
 import { FiMusic, FiHeadphones} from "react-icons/fi";
 const Home = () => {
     return (
         <SongProvider>
+            <Header />
     <div className="flex min-h-screen text-zinc-100 bg-zinc-950 font-sans">
       {/* Sidebar izquierdo */}
       <aside className="basis-1/3 bg-zinc-900 border-r border-zinc-800 px-6 py-8 overflow-y-auto hover:bg-zinc-800 transition-colors ease-in-out duration-300">
