@@ -1,10 +1,10 @@
 import { useSongContext } from '@/hook/useSongContext'
 
 const SongList = () => {
-    const { list, loading, setSelectedSong } = useSongContext();
+    const { list, loading, setSelectedSong, search } = useSongContext();
     
     const filteredSongList = list.filter((song) => 
-        song.title.toLowerCase()
+      song.title.toLowerCase().includes(search.toLowerCase())
     )
 
     return (
