@@ -15,6 +15,7 @@ const registerUserService = async (data) => {
 // autenticar un usuario (Login)
 const loginUserService = async (data) => {
     const response = await axiosInstance.post("/login", data)
+    return response; // retornamos toda la respuesta para manejar status
 }
 //http://localhost/login{json}
 
