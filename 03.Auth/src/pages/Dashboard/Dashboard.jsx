@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { getMeUserService } from "@/services/userServices";
+import { getMeUserService } from "@/service/userService";
 
 const Dashboard = () => {
   const [userData, setUserData] = useState({}); // vacío
