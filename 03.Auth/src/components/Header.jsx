@@ -8,7 +8,7 @@ const Header = () => {
   const navigate = useNavigate();
 
   const handleLogout = () => {
-    toast.info("🫲 Sesión cerrada correctamente");
+    toast.info("👋 Sesión cerrada correctamente");
     logout();
     navigate("/login");
   };
